@@ -26,6 +26,9 @@ const User = require('./models/User');
 //     console.log(document);
 // });
 
+const userRouter = require('./routes/User');
+app.use('/user', userRouter);
+
 app.listen( 5000, () => {
     console.log('express server started');
 });
